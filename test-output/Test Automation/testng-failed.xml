@@ -8,7 +8,9 @@
     <classes>
       <class name="org.selenium.qa.testcases.HomePageTest">
         <methods>
+          <include name="verifyPIM"/>
           <include name="setUp"/>
+          <include name="verifyUserName"/>
           <include name="verifyAdminTab"/>
           <include name="teraDown"/>
         </methods>
