@@ -1,6 +1,17 @@
 # Maven
 - task: Maven@4
   inputs:
+    mavenPomFile: 'pom.xml'
+    goals: 'clean install'
+    publishJUnitResults: true
+    testResultsFiles: '**/surefire-reports/TEST-*.xml'
+    javaHomeOption: 'JDKVersion'
+    mavenVersionOption: 'Default'
+    mavenAuthenticateFeed: false
+    effectivePomSkip: false
+    sonarQubeRunAnalysis: false
+- task: Maven@4
+  inputs:
     mavenPomFile: 'Maven pom.xml'
     goals: 'clean install'
     publishJUnitResults: true
