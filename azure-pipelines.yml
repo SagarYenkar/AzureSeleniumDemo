@@ -1,4 +1,4 @@
-# Maven
+# Maven tasks for building and testing the project
 - task: Maven@4
   inputs:
     mavenPomFile: 'pom.xml'
@@ -10,6 +10,7 @@
     mavenAuthenticateFeed: false
     effectivePomSkip: false
     sonarQubeRunAnalysis: false
+
 - task: Maven@4
   inputs:
     mavenPomFile: 'Maven pom.xml'
@@ -21,16 +22,15 @@
     mavenAuthenticateFeed: false
     effectivePomSkip: false
     sonarQubeRunAnalysis: false
-# Build your Java project and run tests with Apache Maven.
-# Add steps that analyze code, save build artifacts, deploy, and more:
-# https://docs.microsoft.com/azure/devops/pipelines/languages/java
 
+# Define trigger and pool for the pipeline
 trigger:
 - master
 
 pool:
   vmImage: ubuntu-latest
 
+# Define steps for the pipeline
 steps:
 - task: Maven@3
   inputs:
