@@ -34,7 +34,8 @@ public class BaseClass {
    {
 	 try {
 		prop = new Properties();
-		FileInputStream ip = new FileInputStream("C:/SeleniumFramework/SeleniumGoal/src/main/java/org/selenium/qa/properties/config.properties");
+		//FileInputStream ip = new FileInputStream("C:/SeleniumFramework/SeleniumGoal/src/main/java/org/selenium/qa/properties/config.properties");
+		FileInputStream ip = new FileInputStream(System.getProperty("user.dir")+ "/src/main/java"+ "/org/selenium/qa/properties/config.properties");
 		
 		prop.load(ip);
 	 }catch (FileNotFoundException e) {
