@@ -73,7 +73,7 @@ public class HomePageTest extends BaseClass {
     @Test(priority = 3)
     public void verifyPIM() throws InterruptedException {
     	homepage.clickonPim();
-    	
+    	Thread.sleep(3000);
     	
     }
     
