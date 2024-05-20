@@ -11,10 +11,19 @@
           <include name="verifyPIM"/>
           <include name="setUp"/>
           <include name="verifyUserName"/>
+          <include name="verifyHomePageTitle"/>
           <include name="verifyAdminTab"/>
           <include name="teraDown"/>
         </methods>
       </class> <!-- org.selenium.qa.testcases.HomePageTest -->
+      <class name="org.selenium.qa.testcases.LoginPageTest">
+        <methods>
+          <include name="teraDown"/>
+          <include name="loginTest"/>
+          <include name="loginPageTitleTest"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- org.selenium.qa.testcases.LoginPageTest -->
     </classes>
   </test> <!--  Test Cases Execution(failed) -->
 </suite> <!-- Failed suite [Test Automation] -->

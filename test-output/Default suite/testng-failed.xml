@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="org.selenium.qa.testcases.VerifyAllMenuTest">
+      <class name="org.selenium.qa.testcases.LoginPageTest">
         <methods>
-          <include name="verifyAdmin"/>
+          <include name="teraDown"/>
+          <include name="loginTest"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- org.selenium.qa.testcases.VerifyAllMenuTest -->
+      </class> <!-- org.selenium.qa.testcases.LoginPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
